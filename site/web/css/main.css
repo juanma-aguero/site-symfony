@@ -1,0 +1,25 @@
+body{
+	font-family: arial;
+}
+
+.content{
+	border: 1px solid grey;
+	width: 50%;
+	margin: auto;
+}
+
+.header-menu{
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: arial;
+	padding-top: 0px;
+	text-align: center;
+}
+.header-menu a{
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+}
+.header-menu a:hover{
+	text-shadow: 0 0 4px #00FF00;	
+}

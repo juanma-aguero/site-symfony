@@ -1,0 +1,368 @@
+Jul 12 01:18:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jul 12 01:18:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 12 01:18:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 12 01:18:39 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jul 12 01:18:39 symfony [info] {sfPHPView} Render "/var/www/site/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Jul 12 01:18:39 symfony [info] {sfPHPView} Decorate content with "/var/www/site/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 12 01:18:39 symfony [info] {sfPHPView} Render "/var/www/site/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 12 01:18:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 12 01:18:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 12 01:18:39 symfony [info] {sfWebDebugLogger} Configuration 128.19 ms (10)
+Jul 12 01:18:39 symfony [info] {sfWebDebugLogger} Factories 150.02 ms (1)
+Jul 12 01:18:39 symfony [info] {sfWebDebugLogger} Action "default/index" 0.17 ms (1)
+Jul 12 01:18:39 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 15.25 ms (1)
+Jul 12 01:18:39 symfony [info] {sfWebResponse} Send content (28104 o)
+Jul 12 01:18:43 symfony [info] {sfPatternRouting} Match route "post" (/post.:sf_format) for /post with parameters array (  'module' => 'post',  'action' => 'index',  'sf_format' => 'html',)
+Jul 12 01:18:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 12 01:18:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 12 01:18:44 symfony [info] {postActions} Call "postActions->executeIndex()"
+Jul 12 01:18:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 12 01:18:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM post p - ()
+Jul 12 01:18:44 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/indexSuccess.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_header.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 12 01:18:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_th_tabular.php"
+Jul 12 01:18:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:18:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.category_id AS p__category_id, p.title AS p__title, p.body AS p__body FROM post p LIMIT 20 - ()
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_batch_actions.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_actions.php"
+Jul 12 01:18:44 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_footer.php"
+Jul 12 01:18:44 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:18:44 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:18:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 12 01:18:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Configuration 68.43 ms (12)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Factories 39.25 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Action "post/index" 33.28 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 72.20 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 1.14 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 1.25 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_header" 0.95 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_filters" 30.44 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_filters_field" 16.17 ms (3)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list" 14.56 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_th_tabular" 3.16 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_batch_actions" 0.92 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_tabular" 1.70 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_actions" 2.28 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_batch_actions" 1.25 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_actions" 0.85 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebDebugLogger} Partial "post/_list_footer" 0.62 ms (1)
+Jul 12 01:18:44 symfony [info] {sfWebResponse} Send content (66862 o)
+Jul 12 01:30:16 symfony [info] {sfPatternRouting} Match route "post_new" (/post/new.:sf_format) for /post/new with parameters array (  'module' => 'post',  'action' => 'new',  'sf_format' => 'html',)
+Jul 12 01:30:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 12 01:30:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 12 01:30:16 symfony [info] {postActions} Call "postActions->executeNew()"
+Jul 12 01:30:16 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/newSuccess.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_header.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_fieldset.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 12 01:30:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 12 01:30:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_actions.php"
+Jul 12 01:30:16 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_footer.php"
+Jul 12 01:30:16 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:30:16 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:30:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 12 01:30:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Configuration 1.14 ms (11)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Factories 18.14 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Action "post/new" 14.65 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} View "Success" for "post/new" 33.32 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 0.36 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 0.34 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_form_header" 0.34 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_form" 23.17 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_form_fieldset" 19.02 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_form_field" 16.71 ms (3)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_form_actions" 1.26 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebDebugLogger} Partial "post/_form_footer" 0.69 ms (1)
+Jul 12 01:30:16 symfony [info] {sfWebResponse} Send content (58676 o)
+Jul 12 01:31:40 symfony [info] {sfPatternRouting} Match route "post_create" (/post.:sf_format) for /post with parameters array (  'module' => 'post',  'action' => 'create',  'sf_format' => 'html',)
+Jul 12 01:31:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 12 01:31:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 12 01:31:40 symfony [info] {postActions} Call "postActions->executeCreate()"
+Jul 12 01:31:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 12 01:31:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM post_category p WHERE p.id = ? - (1)
+Jul 12 01:31:40 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO post (category_id, title, body) VALUES (?, ?, ?) - (1, simple canvas menu, Exploring the qualitys of canvas for implementing non-boxes menu.)
+Jul 12 01:31:40 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8080/backend_dev.php/post/2/edit"
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8080/backend_dev.php/post/2/edit"
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Configuration 0.93 ms (10)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Factories 20.31 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Action "post/create" 37.76 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send content (120 o)
+Jul 12 01:31:40 symfony [info] {sfPatternRouting} Match route "post_edit" (/post/:id/edit.:sf_format) for /post/2/edit with parameters array (  'module' => 'post',  'action' => 'edit',  'sf_format' => 'html',  'id' => '2',)
+Jul 12 01:31:40 symfony [info] {myUser} Flag old flash messages ("notice")
+Jul 12 01:31:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 12 01:31:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 12 01:31:40 symfony [info] {postActions} Call "postActions->executeEdit()"
+Jul 12 01:31:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 12 01:31:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.category_id AS p__category_id, p.title AS p__title, p.body AS p__body FROM post p WHERE (p.id = ?) - (2)
+Jul 12 01:31:40 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/editSuccess.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_header.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_fieldset.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 12 01:31:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_actions.php"
+Jul 12 01:31:40 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_footer.php"
+Jul 12 01:31:40 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:31:40 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Configuration 1.14 ms (11)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Factories 18.93 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Action "post/edit" 31.21 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} View "Success" for "post/edit" 20.12 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 0.41 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 0.56 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_form_header" 0.42 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_form" 10.39 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_form_fieldset" 6.21 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_form_field" 4.70 ms (3)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_form_actions" 1.33 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebDebugLogger} Partial "post/_form_footer" 0.34 ms (1)
+Jul 12 01:31:40 symfony [info] {sfWebResponse} Send content (61929 o)
+Jul 12 01:31:40 symfony [info] {myUser} Remove old flash messages ("notice")
+Jul 12 01:31:50 symfony [info] {sfPatternRouting} Match route "post" (/post.:sf_format) for /post with parameters array (  'module' => 'post',  'action' => 'index',  'sf_format' => 'html',)
+Jul 12 01:31:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 12 01:31:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 12 01:31:50 symfony [info] {postActions} Call "postActions->executeIndex()"
+Jul 12 01:31:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 12 01:31:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM post p - ()
+Jul 12 01:31:50 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/indexSuccess.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_header.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 12 01:31:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_th_tabular.php"
+Jul 12 01:31:50 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 12 01:31:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.category_id AS p__category_id, p.title AS p__title, p.body AS p__body FROM post p LIMIT 20 - ()
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_batch_actions.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_actions.php"
+Jul 12 01:31:50 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_footer.php"
+Jul 12 01:31:50 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:31:50 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 12 01:31:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 12 01:31:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (11)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Factories 18.48 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Action "post/index" 22.01 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 34.90 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 0.36 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 0.34 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_header" 0.29 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_filters" 11.72 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_filters_field" 8.08 ms (3)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list" 10.02 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_th_tabular" 1.58 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_batch_actions" 0.85 ms (2)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_tabular" 1.57 ms (2)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_actions" 2.14 ms (2)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_batch_actions" 0.59 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_actions" 0.45 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebDebugLogger} Partial "post/_list_footer" 0.29 ms (1)
+Jul 12 01:31:50 symfony [info] {sfWebResponse} Send content (71872 o)
+Jul 13 00:15:39 symfony [info] {sfPatternRouting} Match route "post" (/post.:sf_format) for /post with parameters array (  'module' => 'post',  'action' => 'index',  'sf_format' => 'html',)
+Jul 13 00:15:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 13 00:15:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 13 00:15:39 symfony [info] {postActions} Call "postActions->executeIndex()"
+Jul 13 00:15:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 13 00:15:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM post p - ()
+Jul 13 00:15:39 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/indexSuccess.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_header.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 13 00:15:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_th_tabular.php"
+Jul 13 00:15:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:15:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.category_id AS p__category_id, p.title AS p__title, p.body AS p__body FROM post p LIMIT 20 - ()
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_batch_actions.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_actions.php"
+Jul 13 00:15:39 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_footer.php"
+Jul 13 00:15:39 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 13 00:15:39 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 13 00:15:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 13 00:15:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Configuration 2.72 ms (11)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Factories 71.04 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Action "post/index" 102.68 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 97.37 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 0.97 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 0.95 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_header" 0.64 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_filters" 31.91 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_filters_field" 16.46 ms (3)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list" 21.33 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_th_tabular" 1.71 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_batch_actions" 1.44 ms (2)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_tabular" 2.68 ms (2)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_actions" 3.62 ms (2)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_batch_actions" 1.19 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_actions" 0.95 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebDebugLogger} Partial "post/_list_footer" 0.76 ms (1)
+Jul 13 00:15:39 symfony [info] {sfWebResponse} Send content (71731 o)
+Jul 13 00:15:55 symfony [info] {sfPatternRouting} Match route "post_edit" (/post/:id/edit.:sf_format) for /post/1/edit with parameters array (  'module' => 'post',  'action' => 'edit',  'sf_format' => 'html',  'id' => '1',)
+Jul 13 00:15:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 13 00:15:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 13 00:15:55 symfony [info] {postActions} Call "postActions->executeEdit()"
+Jul 13 00:15:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 13 00:15:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.category_id AS p__category_id, p.title AS p__title, p.body AS p__body FROM post p WHERE (p.id = ?) - (1)
+Jul 13 00:15:55 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/editSuccess.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_header.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_fieldset.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 13 00:15:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_field.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_actions.php"
+Jul 13 00:15:55 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_form_footer.php"
+Jul 13 00:15:55 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 13 00:15:55 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 13 00:15:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 13 00:15:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (11)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Factories 18.19 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Action "post/edit" 35.98 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} View "Success" for "post/edit" 20.95 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 0.42 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 0.34 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_form_header" 0.38 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_form" 11.07 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_form_fieldset" 6.49 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_form_field" 4.72 ms (3)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_form_actions" 1.49 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebDebugLogger} Partial "post/_form_footer" 0.37 ms (1)
+Jul 13 00:15:55 symfony [info] {sfWebResponse} Send content (61308 o)
+Jul 13 00:16:15 symfony [info] {sfPatternRouting} Match route "post" (/post.:sf_format) for /post with parameters array (  'module' => 'post',  'action' => 'index',  'sf_format' => 'html',)
+Jul 13 00:16:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 13 00:16:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 13 00:16:15 symfony [info] {postActions} Call "postActions->executeIndex()"
+Jul 13 00:16:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 13 00:16:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM post p - ()
+Jul 13 00:16:15 symfony [info] {sfPHPView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/indexSuccess.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_assets.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_flashes.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_header.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 13 00:16:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name FROM post_category p - ()
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_filters_field.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_th_tabular.php"
+Jul 13 00:16:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Set slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {main} Get slot "sf_admin.current_header"
+Jul 13 00:16:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.category_id AS p__category_id, p.title AS p__title, p.body AS p__body FROM post p LIMIT 20 - ()
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_batch_actions.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_tabular.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_td_actions.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_batch_actions.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_actions.php"
+Jul 13 00:16:15 symfony [info] {sfPartialView} Render "/var/www/site/cache/backend/dev/modules/autoPost/templates/_list_footer.php"
+Jul 13 00:16:15 symfony [info] {sfPHPView} Decorate content with "/var/www/site/apps/backend/templates/layout.php"
+Jul 13 00:16:15 symfony [info] {sfPHPView} Render "/var/www/site/apps/backend/templates/layout.php"
+Jul 13 00:16:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 13 00:16:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Configuration 1.12 ms (11)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Factories 20.07 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Action "post/index" 23.63 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 35.55 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_assets" 0.38 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_flashes" 0.38 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_header" 0.31 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_filters" 12.81 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_filters_field" 9.07 ms (3)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list" 10.16 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_th_tabular" 1.59 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_batch_actions" 0.87 ms (2)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_tabular" 1.60 ms (2)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_td_actions" 2.17 ms (2)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_batch_actions" 0.60 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_actions" 0.43 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_footer" 0.29 ms (1)
+Jul 13 00:16:15 symfony [info] {sfWebResponse} Send content (71812 o)
