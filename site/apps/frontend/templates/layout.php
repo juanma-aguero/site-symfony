@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	  <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>
@@ -10,17 +12,14 @@
   </head>
   <body>
   	<div class="header-menu">
-			<a href="<?php echo url_for('post/index') ?>" >Home</a>
-			<a href="<?php echo url_for('post/music') ?>" >Music</a>
-			<a href="<?php echo url_for('post/code') ?>" >Code</a>
-			<a href="http://github.com/juanma-aguero" >git</a>
+			<a href="<?php echo url_for('post/index') ?>" >Inicio</a>
+			<a href="<?php echo url_for('post/music') ?>" >Musica</a>
+			<a href="<?php echo url_for('post/code') ?>" >Cosas</a>
+			<a href="http://github.com/juanma-aguero" >Github</a>
+			<br/>
+			<a href="https://twitter.com/aguerojm" class="twitter-follow-button" data-button="grey" data-link-color="grey" data-text-color="000000" ></a>
 		</div>
-		<div style="width:700px; height: 20px; margin: auto;">
-			<a href="http://twitter.com/aguerojm" style="float: right;">
-				<img src="/images/twitter-follow-me.jpg"/>
-			</a>
-		</div>
-  	<div class="content">
+	  	<div class="content">
     <?php echo $sf_content ?>
     </div>
   </body>

@@ -1,10 +1,11 @@
 body{
 	font-family: arial;
 	background-image: url('/images/main-bg.jpg');
+	background-size: cover;
 }
 
 .content{
-	padding: 10px;
+	padding: 20px;
 	background-color: white;
 	border: 1px solid grey;
 	width: 60%;
@@ -17,14 +18,16 @@ body{
 .header-menu{
 	float: left;
 	background-color: white;
-	width: 10%;
-	margin-top: 20px;
+	width: 15%;
+	margin-top: 15px;
 	font-size: 30px;
 	font-family: arial;
 	padding-top: 20	px;
 	text-align: center;
 	opacity: 0.9;
 	border-radius: 0 0.7em 0.7em 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 .header-menu a{
 	display: block;
@@ -35,3 +38,23 @@ body{
 .header-menu a:hover{
 	text-shadow: 3px 4px 10px grey;	
 }
+
+.post-title{
+}
+.post-title a{
+	color: green;
+	text-decoration: none;
+	font-weight: bold;
+}
+.post-body{
+
+}
+.post-date{
+	font-size: 12px;
+	color: grey;
+}
+
+
+
+
+
