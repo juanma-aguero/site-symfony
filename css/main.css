@@ -1,7 +1,10 @@
 body{
 	font-family: arial;
-	background-image: url('/images/main-bg.jpg');
+	background-image: url('/site-juanma-symfony/images/main-bg.jpg');
 	background-size: cover;
+}
+a{
+	text-decoration: none;
 }
 
 .content{
@@ -39,6 +42,9 @@ body{
 	text-shadow: 3px 4px 10px grey;	
 }
 
+.post{
+	border-top: solid grey 1px;
+}
 .post-title{
 }
 .post-title a{
@@ -54,7 +60,16 @@ body{
 	color: grey;
 }
 
+.box-login{
+	border-top: solid grey 1px;
+	padding-top: 5px;
+	font-size: 10px;
+}
+.box-login label{
 
-
-
-
+}
+.box-login input{
+	color: white;
+	border: none;
+	background-color: grey;
+}

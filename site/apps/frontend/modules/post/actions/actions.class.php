@@ -12,30 +12,26 @@ class postActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->posts = Doctrine_Core::getTable('Post')
-      ->createQuery('a')
-      ->execute();
-  }
-  
-  public function executeMusic(sfWebRequest $request)
-  {
-    $this->posts = Doctrine_Core::getTable('Post')
-      ->createQuery('a')
-      ->execute();
-  }
-  
-  
-  public function executeCode(sfWebRequest $request)
-  {
-    $this->posts = Doctrine_Core::getTable('Post')
-      ->createQuery('a')
-      ->execute();
-  }
-  
+  	$categoryId = $request->getParameter('categoryId');
+  	
+	  $q = Doctrine_Query::create()->select('*')->from('Post p');
+		
+		if( $categoryId ){
+			$q->where('p.category_id = ?', $categoryId );
+		}
 
+
+		$this->posts = $q->execute();
+  	
+    $this->user = $this->getUser();
+    
+  }
+  
   public function executeShow(sfWebRequest $request)
   {
     $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
+    $this->user = $this->getUser();
+    
     $this->forward404Unless($this->post);
   }
 

@@ -1,26 +1,28 @@
 <?php
 
 /**
- * PostCategory filter form base class.
+ * User filter form base class.
  *
  * @package    site
  * @subpackage filter
  * @author     Juan Manuel Aguero
  * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
  */
-abstract class BasePostCategoryFormFilter extends BaseFormFilterDoctrine
+abstract class BaseUserFormFilter extends BaseFormFilterDoctrine
 {
   public function setup()
   {
     $this->setWidgets(array(
-      'name' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'name'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'password' => new sfWidgetFormFilterInput(array('with_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'name' => new sfValidatorPass(array('required' => false)),
+      'name'     => new sfValidatorPass(array('required' => false)),
+      'password' => new sfValidatorPass(array('required' => false)),
     ));
 
-    $this->widgetSchema->setNameFormat('post_category_filters[%s]');
+    $this->widgetSchema->setNameFormat('user_filters[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
 
@@ -31,14 +33,15 @@ abstract class BasePostCategoryFormFilter extends BaseFormFilterDoctrine
 
   public function getModelName()
   {
-    return 'PostCategory';
+    return 'User';
   }
 
   public function getFields()
   {
     return array(
-      'id'   => 'Number',
-      'name' => 'Text',
+      'id'       => 'Number',
+      'name'     => 'Text',
+      'password' => 'Text',
     );
   }
 }

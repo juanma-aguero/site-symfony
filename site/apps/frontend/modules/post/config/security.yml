@@ -1,2 +1,8 @@
-all:
+index:
   is_secure: false
+
+show:
+  is_secure: false
+
+all:
+  is_secure: true

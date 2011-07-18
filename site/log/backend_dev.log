@@ -366,3 +366,10 @@ Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_batch_acti
 Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_actions" 0.43 ms (1)
 Jul 13 00:16:15 symfony [info] {sfWebDebugLogger} Partial "post/_list_footer" 0.29 ms (1)
 Jul 13 00:16:15 symfony [info] {sfWebResponse} Send content (71812 o)
+Jul 16 15:10:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Jul 16 15:10:10 symfony [info] {sfFrontWebController} Action "user/index" does not exist
+Jul 16 15:10:10 symfony [err] {sfError404Exception} Action "user/index" does not exist.
+Jul 16 15:10:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 16 15:10:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 16 15:10:10 symfony [info] {sfWebDebugLogger} Configuration 52.54 ms (5)
+Jul 16 15:10:10 symfony [info] {sfWebDebugLogger} Factories 69.21 ms (1)

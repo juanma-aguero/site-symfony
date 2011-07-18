@@ -5,10 +5,13 @@ $(document).ready(function(){
 </script>
 <div>
 <div class="post-title"><a><?php echo $post->getTitle() ?></a></div>
+<div class="post-date"><?php echo $post->getCreatedAt() ?></div>
 <br/>
 <input id="bodyValue" type="hidden" value="<?php echo esc_raw( $post->getBody() ) ?>"/>
 <div class="post-body" id="body"></div>
 
 <br/>
-<a href="<?php echo url_for('post/index') ?>">Home</a>
-<a href="<?php echo url_for('post/edit?id='.$post->getId()) ?>">Edit</a>
+
+<?php if( $user->isAuthenticated() ): ?>
+	<a href="<?php echo url_for('post/edit?id='.$post->getId()) ?>">Edit</a>
+<?php endif; ?>

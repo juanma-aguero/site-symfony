@@ -7,7 +7,7 @@
  *
  * @package    site
  * @subpackage form
- * @author     Your name here
+ * @author     Juan Manuel Aguero
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
 abstract class BasePostForm extends BaseFormDoctrine
@@ -19,6 +19,8 @@ abstract class BasePostForm extends BaseFormDoctrine
       'category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('PostCategory'), 'add_empty' => false)),
       'title'       => new sfWidgetFormInputText(),
       'body'        => new sfWidgetFormTextarea(),
+      'created_at'  => new sfWidgetFormDateTime(),
+      'updated_at'  => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -26,6 +28,8 @@ abstract class BasePostForm extends BaseFormDoctrine
       'category_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('PostCategory'))),
       'title'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'body'        => new sfValidatorString(array('max_length' => 4000, 'required' => false)),
+      'created_at'  => new sfValidatorDateTime(),
+      'updated_at'  => new sfValidatorDateTime(),
     ));
 
     $this->widgetSchema->setNameFormat('post[%s]');

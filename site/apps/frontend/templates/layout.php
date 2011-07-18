@@ -11,16 +11,24 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-  	<div class="header-menu">
-			<a href="<?php echo url_for('post/index') ?>" >Inicio</a>
-			<a href="<?php echo url_for('post/music') ?>" >Musica</a>
-			<a href="<?php echo url_for('post/code') ?>" >Cosas</a>
-			<a href="http://github.com/juanma-aguero" >Github</a>
+  <div class="header-menu">
+  	<?php 
+  	
+  	$postCategorys = Doctrine_Core::getTable('PostCategory')
+		    ->createQuery('a')
+		    ->execute();
+  	
+  	?>
+  		<a href="<?php echo url_for('post/index') ?>" >everything</a>
+			<?php foreach( $postCategorys as $category ): ?>
+			<a href="<?php echo url_for('post/index?categoryId='.$category->getId() ) ?>" ><?php echo $category->getName() ?></a>
+			<?php endforeach; ?>
+			<a href="http://github.com/juanma-aguero" >github</a>
 			<br/>
-			<a href="https://twitter.com/aguerojm" class="twitter-follow-button" data-button="grey" data-link-color="grey" data-text-color="000000" ></a>
+			<a href="https://twitter.com/aguerojm" class="twitter-follow-button" data-button="grey" data-link-color="00ff00" data-text-color="000000" ></a>
 		</div>
-	  	<div class="content">
-    <?php echo $sf_content ?>
+  	<div class="content">
+    	<?php echo $sf_content ?>
     </div>
   </body>
 </html>

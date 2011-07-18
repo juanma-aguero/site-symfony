@@ -21,7 +21,7 @@
  * 
  * @package    site
  * @subpackage model
- * @author     Your name here
+ * @author     Juan Manuel Aguero
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BasePost extends sfDoctrineRecord
@@ -48,7 +48,9 @@ abstract class BasePost extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('PostCategory', array(
              'local' => 'category_id',
-             'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'foreign' => 'id'));
+
+        $timestampable0 = new Doctrine_Template_Timestampable();
+        $this->actAs($timestampable0);
     }
 }

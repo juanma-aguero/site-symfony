@@ -7,7 +7,7 @@
  *
  * @package    site
  * @subpackage form
- * @author     Your name here
+ * @author     Juan Manuel Aguero
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
 abstract class BasePostCategoryForm extends BaseFormDoctrine
